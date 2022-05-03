@@ -88,10 +88,10 @@ export default {
     <div class="p-10 rounded-3xl transition duration-150 ease-out hover:ease-in hover:bg-gray-lightest">
       <a :href="card.link" target="_blank">
         <div :class="card.lightBackround" class="p-14 rounded-3xl">
-          <img :src="card.image" alt="Vue logo"/>
+          <img :src="card.image" :alt="card.title + ' logo'"/>
         </div>
         <h1 class="uppercase text-xl font-bold pt-2"> {{ card.title }} </h1>
-        <h2>Timeline: 6 weeks out</h2>
+        <h2>Timeline: {{ card.time }}</h2>
       </a>
     </div>
   </div>
