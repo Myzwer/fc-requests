@@ -3,6 +3,7 @@
 export default {
   data() {
     return {
+      darkMode: true,
       cards: [
         {
           title: "Graphics",
@@ -90,8 +91,8 @@ export default {
         <div :class="card.lightBackround" class="p-14 rounded-3xl">
           <img :src="card.image" :alt="card.title + ' logo'"/>
         </div>
-        <h1 class="uppercase text-xl font-bold pt-2"> {{ card.title }} </h1>
-        <h2>Timeline: {{ card.time }}</h2>
+        <h1 class="uppercase text-xl font-bold pt-2 pl-3"> {{ card.title }} </h1>
+        <h2 class = "pl-3">Timeline: {{ card.time }}</h2>
       </a>
     </div>
   </div>
