@@ -3,9 +3,6 @@
 
 export default {
   data() {
-    const props = defineProps({
-      darkMode: Boolean
-    })
     return {
       cards: [
         {
