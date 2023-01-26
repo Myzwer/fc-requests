@@ -1,15 +1,18 @@
 <script xmlns="http://www.w3.org/1999/html">
 
+
 export default {
   data() {
+    const props = defineProps({
+      darkMode: Boolean
+    })
     return {
-      darkMode: true,
       cards: [
         {
           title: "Graphics",
           time: "5 Weeks Out",
           image: "/img/graphics-logo.png",
-          lightBackround: "graphics-light-bg",
+          lightBackground: "graphics-light-bg",
           darkBackground: "graphics-dark-bg",
           link: "https://form.asana.com/?hash=82a0b07a5bf0952f49f8e3a9c3c7141586aa0391685c2f8886d64246293fa4b1&id=1180472366888569",
         },
@@ -17,7 +20,7 @@ export default {
           title: "production",
           time: "6 Weeks Out",
           image: "/img/production-logo.png",
-          lightBackround: "production-light-bg",
+          lightBackground: "production-light-bg",
           darkBackground: "production-dark-bg",
           link: "https://form.asana.com/?hash=955ccdec3575db6c7b033d8f286a54471bd49e182661b139c7bccf293115bb30&id=1181669917666701",
         },
@@ -25,15 +28,15 @@ export default {
           title: "video",
           time: "5 Weeks Out",
           image: "/img/video-logo.png",
-          lightBackround: "video-light-bg",
+          lightBackground: "video-light-bg",
           darkBackground: "video-dark-bg",
-          link: "https://form.asana.com/?hash=c8ebf3f86a60d54cd1bc1748b1efda5b697c32ee46ba774d32a72ae083f18b47&id=1181617399985893",
+          link: "https://form.asana.com/?k=hVXP6a1czb8JiewfDtt8fA&d=169089913990651",
         },
         {
           title: "content capture",
           time: "4 Weeks Out",
           image: "/img/cc-logo.png",
-          lightBackround: "cc-light-bg",
+          lightBackground: "cc-light-bg",
           darkBackground: "cc-dark-bg",
           link: "https://form.asana.com/?hash=9e5cf307fc0098eac87dcd155c49001db46d77ba6b4e71f22a7918a73a2cf090&id=1181687929181103",
         },
@@ -41,7 +44,7 @@ export default {
           title: "music",
           time: "6 Weeks Out",
           image: "/img/music-logo.png",
-          lightBackround: "music-light-bg",
+          lightBackground: "music-light-bg",
           darkBackground: "music-dark-bg",
           link: "https://form.asana.com/?hash=0898d731f222ac6067ee68ac7f0dacaa1cee2a4607da8bad91762de95b4774ac&id=1181645616362842",
         },
@@ -49,7 +52,7 @@ export default {
           title: "comms",
           time: "6 Weeks Out",
           image: "/img/comms-logo.png",
-          lightBackround: "comms-light-bg",
+          lightBackground: "comms-light-bg",
           darkBackground: "comms-dark-bg",
           link: "https://form.asana.com/?k=BLdJnFUuhfCYwKYYl7j6og&d=169089913990651/",
         },
@@ -57,7 +60,7 @@ export default {
           title: "events",
           time: "8 Weeks Out",
           image: "/img/events-logo.png",
-          lightBackround: "events-light-bg",
+          lightBackground: "events-light-bg",
           darkBackground: "events-dark-bg",
           link: "https://form.asana.com/?hash=c4a73e4cfd4d57c50801c24ee91449faaebada1f236a946cbe87063a92cb595d&id=1181687929181075",
         },
@@ -65,7 +68,7 @@ export default {
           title: "facilities",
           time: "4 Weeks Out",
           image: "/img/facilities-logo.png",
-          lightBackround: "facilities-light-bg",
+          lightBackground: "facilities-light-bg",
           darkBackground: "facilities-dark-bg",
           link: "https://calendar.planningcenteronline.com/rooms",
         },
@@ -73,7 +76,7 @@ export default {
           title: "childcare",
           time: "4 Weeks Out",
           image: "/img/childcare-logo.png",
-          lightBackround: "child-light-bg",
+          lightBackground: "child-light-bg",
           darkBackground: "child-dark-bg",
           link: "https://form.asana.com/?hash=5ee3d7b1c6d28053c36213352eb6ef1871cc141a9391f4dfd61403770a3a49ce&id=1194262452423960",
         },
@@ -88,7 +91,7 @@ export default {
   <div v-for="card in cards" class="col-span-12 md:col-span-6 lg:col-span-4 px-5 text-black">
     <div class="p-10 rounded-3xl transition duration-150 ease-out hover:ease-in hover:bg-gray-lightest">
       <a :href="card.link" target="_blank">
-        <div :class="card.lightBackround" class="p-14 rounded-3xl">
+        <div :class="card.lightBackground" class="p-14 rounded-3xl">
           <img :src="card.image" :alt="card.title + ' logo'"/>
         </div>
         <h1 class="uppercase text-xl font-bold pt-2 pl-3"> {{ card.title }} </h1>
@@ -96,6 +99,8 @@ export default {
       </a>
     </div>
   </div>
+
+
 </template>
 
 
