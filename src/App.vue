@@ -17,19 +17,6 @@ const darkMode = ref(false);
         <card/>
       </div>
     </div>
-
-    <div class="mx-auto text-center py-12">
-      <button
-          @click="darkMode = !darkMode"
-          class="mb-20 uppercase md:inline-block rounded-md py-3 px-6 transition duration-300"
-          :class="{ 'bg-gray-dark hover:bg-gray-darkest text-white': !darkMode, 'bg-gray-light hover:bg-gray-lightest text-black': darkMode }">
-        <span v-if="darkMode">Enable Light Mode</span>
-        <span v-else>Enable Dark Mode</span>
-      </button>
-    </div>
   </div>
 </template>
 
-<style>
-
-</style>
