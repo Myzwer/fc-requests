@@ -5,14 +5,14 @@ export default {
   data() {
     return {
       cards: [
-        {
+        /*{
           title: "Graphics",
           time: "5 Weeks Out",
           image: "/img/graphics-logo.png",
           lightBackground: "graphics-light-bg",
           darkBackground: "graphics-dark-bg",
           link: "https://form.asana.com/?hash=82a0b07a5bf0952f49f8e3a9c3c7141586aa0391685c2f8886d64246293fa4b1&id=1180472366888569",
-        },
+        },*/
         {
           title: "production",
           time: "6 Weeks Out",
@@ -21,14 +21,14 @@ export default {
           darkBackground: "production-dark-bg",
           link: "https://form.asana.com/?hash=955ccdec3575db6c7b033d8f286a54471bd49e182661b139c7bccf293115bb30&id=1181669917666701",
         },
-        {
+        /*{
           title: "video",
           time: "5 Weeks Out",
           image: "/img/video-logo.png",
           lightBackground: "video-light-bg",
           darkBackground: "video-dark-bg",
           link: "https://form.asana.com/?k=hVXP6a1czb8JiewfDtt8fA&d=169089913990651",
-        },
+        },*/
         {
           title: "content capture",
           time: "4 Weeks Out",
