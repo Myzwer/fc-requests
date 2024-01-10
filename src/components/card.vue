@@ -30,14 +30,6 @@ export default {
           link: "https://form.asana.com/?hash=0898d731f222ac6067ee68ac7f0dacaa1cee2a4607da8bad91762de95b4774ac&id=1181645616362842",
         },
         {
-          title: "events",
-          time: "8 Weeks Out",
-          image: "/img/events-logo.png",
-          lightBackground: "events-light-bg",
-          darkBackground: "events-dark-bg",
-          link: "https://form.asana.com/?hash=c4a73e4cfd4d57c50801c24ee91449faaebada1f236a946cbe87063a92cb595d&id=1181687929181075",
-        },
-        {
           title: "facilities",
           time: "4 Weeks Out",
           image: "/img/facilities-logo.png",
